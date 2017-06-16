@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="SimpleMath" version="1.0.0" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>MyMath</name>
+    <js-module name="MyMath" src="www/MyMath.js">
+        <clobbers target="cordova.plugins.MyMath" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="MyMath">
+                <param name="android-package" value="SimpleMath.MyMath" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/MyMath.java" target-dir="src/SimpleMath/MyMath" />
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="MyMath">
+                <param name="ios-package" value="MyMath" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/demo1Plugin-Bridging-Header.h" />
+        <source-file src="src/ios/MyMath.swift" />
+    </platform>
+</plugin>

@@ -1,0 +1,17 @@
+{
+  "name": "MyMath",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "simpleMath",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC"
+}

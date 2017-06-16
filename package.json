@@ -1,0 +1,34 @@
+{
+    "name": "com.crossess.demo1",
+    "displayName": "demo1Plugin",
+    "version": "1.0.0",
+    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Apache Cordova Team",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "MyMath": "file:MyMath",
+        "cordova-android": "^6.2.3",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-add-swift-support": "^1.6.2",
+        "cordova-plugin-device": "^1.1.6",
+        "cordova-plugin-whitelist": "^1.3.2",
+        "mymath": "file:MyMath",
+        "SimpleMath": "./MyMath"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-device": {},
+            "cordova-plugin-add-swift-support": {},
+            "SimpleMath": {}
+        },
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    }
+}
